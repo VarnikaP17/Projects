@@ -1,0 +1,25 @@
+.msg{
+    display : flex;
+    flex-direction : column;
+    gap : 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top : 90px;
+    margin-left : 400px;
+    font-size : 40px;
+    background-color: rgb(131, 199, 131);
+    width : 500px;
+    color: rgb(6, 67, 6);
+    padding-top : 20px;
+    padding-bottom : 20px;
+}
+
+.msg p{
+    font-size : 30px;
+    background-color: rgb(131, 199, 131);
+}
+
+.msg a, b{
+    text-decoration: none;
+    background-color: rgb(131, 199, 131);
+}

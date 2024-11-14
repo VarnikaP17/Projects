@@ -1,0 +1,347 @@
+*{
+    margin : 0;
+    font-family : Arial, Helvetica, sans-serif;
+    border : border-box;
+}
+
+
+.navbar{
+    height : 60px;
+    background-color : #0f1111;
+    color : white;
+    display : flex;
+    align-items : center;
+    justify-content : space-evenly;
+}
+
+.nav-logo{
+    height : 50px;
+    width : 100px;
+}
+
+.logo{
+    background-image : url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdLsoRAxk0KVm3qnc_PHMLfquOzXpfuijNH7T8vad0byezOx5R3lDZkQI4v5X7yB-QaPI&usqp=CAU");
+    background-size : cover;
+    height : 50px;
+}
+
+.border:hover{
+    border-style : solid;
+    border-color : white;   
+    border-width: 1.5px;
+    padding : 2px;
+}
+
+.addr1{
+    color : #cccccc;
+    font-size : 0.8rem;
+    margin-left : 15px;
+}
+
+.addr2{
+    font-size : 1.2rem;
+    margin-left : 3px;
+}
+
+.addr-icon{
+    display : flex;
+    align-items : center;
+}
+
+.nav-search{
+    display : flex;
+    width : 600px;
+    height : 40px;
+    border-radius : 5px;
+    display : flex;
+    justify-content : space-evenly;
+}
+
+.nav-search-border :hover{
+    border : 2px solid orange;
+}
+
+.search-select{
+    background-color : #f3f3f3;
+    width : 40px;
+    text-align : center;
+    border-top-left-radius : 5px;
+    border-bottom-left-radius: 5px;
+    border : none;
+}
+
+.search-input{
+    width : 100%;
+    border : none;
+}
+
+.search-icon{
+    width : 45px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    background-color : rgb(210, 149, 18);
+    color : #0f1111;
+    border-top-right-radius : 5px;
+    border-bottom-right-radius : 5px;
+}
+
+.select-lang{
+    display : flex;
+}
+
+.flag{
+    background-image : url("data:image/png;base64,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");
+    background-size : cover;
+    width : 20px;
+    height : 15px;
+}
+
+.lang{
+    background-color : #0f1111;
+    color : #f3f3f3;
+    font-size : 14px;
+    font-weight : bold;
+    border : none;
+}
+
+span{
+    font-size : 0.7rem;
+}
+
+.nav-second{
+    font-size : 0.85rem;
+    font-weight : 700;
+}
+
+.nav-cart i{
+    font-size : 28px;
+}
+
+.nav-cart {
+    font-size : 0.85rem;
+    font-weight : 700;
+}
+
+.panel{
+    background-color : #222f3d;
+    height : 40px;
+    display : flex;
+    color : #f3f3f3;
+    align-items : center;
+    justify-content : space-evenly;
+}
+
+.panel-ops p{
+    display : inline;
+    margin-left : 15px;
+}
+
+.panel-ops{
+    width : 75%;
+    font-size : 0.85rem;
+}
+
+.panel-deals{
+    font-size : 0.9rem;
+    font-weight : 700;
+}
+
+@keyframes bg-image{
+    0%{
+        background-image : url("https://m.media-amazon.com/images/I/61lwJy4B8PL._SX3000_.jpg");
+        background-size : cover;
+        height : 360px;
+    } 
+    25%{
+        background-image : url("https://m.media-amazon.com/images/I/71Ie3JXGfVL._SX3000_.jpg");
+    background-size : cover;
+    height : 360px;
+    }   
+    75%{
+        background-image : url("https://m.media-amazon.com/images/I/81KkrQWEHIL._SX3000_.jpg");
+    background-size : cover;
+    height : 360px;
+    }
+    100%{
+        background-image : url("https://m.media-amazon.com/images/I/61zAjw4bqPL._SX3000_.jpg");
+    background-size : cover;
+    height : 360px;
+    }
+}
+
+.main-content{
+    animation : bg-image 20s ease-in infinite;
+    display : flex;
+    justify-content : center;
+    align-items : flex-end;
+}
+
+.main-msg{
+    background-color : white;
+    font-size : 14px;
+    height : 40px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 95%;
+    margin-bottom : 70px;
+}
+
+.main-msg a{
+    text-decoration : none;
+    color : #007185;
+}
+
+.shop-section{
+    display : flex;
+    justify-content : space-evenly;
+    flex-wrap: wrap;
+    background-color : #e3e6e6;
+}
+
+.box{
+    height : 330px;
+    width : 23%;
+    background-color : white;
+    padding : 20px 0px 15px;
+    margin-top : 8px;
+}
+
+.box1-image{
+        height : 250px; 
+        background-size : cover; 
+        background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v1._SY608_CB573698005_.jpg");
+        margin-top : 1rem;
+        margin-bottom : 1rem;
+}
+
+.box-content{
+    margin-left : 10px;
+    margin-right : 10px;
+}
+
+.box2-image{
+    height : 250px; 
+    background-size : cover; 
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/2023/GateWay/December/CC/PC_758x608_1._SY608_CB572341311_.jpg");
+    margin-top : 1rem;
+    margin-bottom : 1rem;
+}
+
+.box3-image{
+    height : 250px; 
+    background-size : cover; 
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v3._SY608_CB573698005_.jpg");
+    margin-top : 1rem;
+    margin-bottom : 1rem;
+}
+
+.box4-image{
+    height : 250px; 
+    background-size : cover; 
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v6._SY608_CB573698005_.jpg");
+    margin-top : 1rem;
+    margin-bottom : 1rem;
+}
+
+.box5-image{
+    height : 250px; 
+    background-size : cover; 
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v5._SY608_CB573698005_.jpg");
+    margin-top : 1rem;
+    margin-bottom : 1rem;
+}
+
+.box6-image{
+    height : 250px; 
+    background-size : cover; 
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img18/Lawn_Garden/Ud/2024/PCCC/758x608_updated._SY608_CB554999408_.jpg");
+    margin-top : 1rem;
+    margin-bottom : 1rem;
+}
+
+.box7-image{
+    height : 250px; 
+    background-size : cover; 
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_SmartWatch_2X._SY608_CB639922111_.jpg");
+    margin-top : 1rem;
+    margin-bottom : 1rem;
+}
+
+.box8-image{
+    height : 250px; 
+    background-size : cover; 
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v8._SY608_CB573698005_.jpg");
+    margin-top : 1rem;
+    margin-bottom : 1rem;
+}
+
+footer{
+    margin-top : 8px;
+}
+.foot-panel1{
+    background-color : #37475a;
+    color : white;
+    height : 50px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    font-size : 0.85rem;
+    font-weight : 550;
+}
+
+.foot-panel2{
+    display : flex;
+    justify-content : space-evenly;
+    background-color : #232f3e;
+    color : white;
+    height : 300px;
+}
+
+ul {
+    margin-top : 10px;
+}
+
+li{
+    font-size : 0.85rem;
+    margin-top : 10px;
+    color : #DDDDDD
+}
+
+b{
+    font-size : 15px;
+    color : white;
+ }
+ 
+.foot-panel3{
+    background-color : #232f3e;
+    color : white;
+    height : 68px;
+    border-top : 1px solid #3a4553;
+     display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.logo-footer{
+    background-image : url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdLsoRAxk0KVm3qnc_PHMLfquOzXpfuijNH7T8vad0byezOx5R3lDZkQI4v5X7yB-QaPI&usqp=CAU");
+    background-size : cover;
+    height : 50px;
+    width : 100px;
+}
+
+.foot-panel4{
+    background-color : #131a22;
+    height : 77px;
+    color : white;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    font-size : 0.7rem;
+    text-align : center;
+}
+
+.copyright{
+    padding-top : 8px;
+}

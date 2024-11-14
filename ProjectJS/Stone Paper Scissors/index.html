@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang = en>
+    <head>
+        <title>Rock Paper Siccors Game</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+
+    <body>
+        <h1>Rock Paper Scissors Game</h1>
+        <center><h4>Made with &#128151 by Varnika</h4></center>
+        <div class="choices">
+            <div class = "choice" id = "rock"> <img src = "https://github.com/shradha-khapra/JavaScriptSeries/blob/main/StonePaperScissors/images/rock.png?raw=true"></div>
+            <div class = "choice" id = "paper"> <img src = "https://github.com/shradha-khapra/JavaScriptSeries/blob/main/StonePaperScissors/images/paper.png?raw=true"></div>
+            <div class = "choice" id = "scissors"> <img src = "https://github.com/shradha-khapra/JavaScriptSeries/blob/main/StonePaperScissors/images/scissors.png?raw=true"></div>
+        </div>
+
+        <div class = "score-board">
+            <div class = "myscore">
+                <p id = "userScore">0</p>
+                <p>You</p>
+            </div>
+            <div class = "compscore">
+                <p id = "compScore">0</p>
+                <p>Comp</p>
+            </div>
+        </div>
+
+        <div class = "messageContainer">
+            <p id = "message">Play your move</p>
+        </div>
+
+        <div class = "restartGame">
+            <button id = "restart" onclick = clicked() >Restart Game</button>
+        </div>
+
+        <script src = "app.js"></script>
+    </body>
+</html>

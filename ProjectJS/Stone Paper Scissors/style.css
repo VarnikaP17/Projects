@@ -1,0 +1,89 @@
+*{
+    margin : 0;
+    padding : 0;
+    text-align : center;
+}
+
+h1{
+    background-color : #081b31;
+    color : #fff;
+    height : 5rem;
+    line-height : 5rem;
+}
+
+.choice{
+    height : 165px;
+    width : 165px;
+    margin-top : 5rem;
+}
+
+.choice:hover{
+    background-color : #081b31;
+    cursor : pointer;
+    border-radius : 50%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+img{
+    height : 150px;
+    width : 150px;
+    object-fit : cover;
+    border-radius : 50%;
+}
+
+.choices{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    gap : 3rem;
+}
+
+.score-board{
+    display : flex;
+    font-size : 2rem;
+    justify-content : center;
+    align-items : center;
+    margin-top : 3rem;
+    gap : 5rem;
+}
+
+#userScore, #compScore{
+    font-size : 4rem;
+}
+
+.messageContainer{
+    margin-top : 5rem;
+}
+
+#message{
+    background-color : #081b31;
+    color : #fff;
+    font-size : 2rem;
+    display : inline;
+    padding : 1rem;
+    border-radius : 1rem;
+}
+
+.restartGame{
+    margin-top : 2rem;
+}
+
+#restart{
+    font-size : 1rem;
+    line-height : 2rem;
+    border-radius : 0.5rem;
+    background-color : #081b31;
+    color : white;
+    padding : 0.4rem;
+}
+
+#restart:hover{
+    cursor : pointer;
+}
+
+#restart:active{
+    background-color : green;
+    color : white;
+}

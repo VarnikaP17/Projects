@@ -1,0 +1,32 @@
+*{
+    margin : 0px;
+    padding : 0px;
+    background-color: #e8d7d4;
+}
+
+.nav{
+    color : #8552a0;
+    font-weight: bold;
+    font-size : 20px;
+    display : flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav a{
+    text-decoration : none;
+    color: #8552a0;
+}
+
+.nav div:hover{
+    cursor: pointer;
+    font-size : 22px;
+}
+
+.logo-img{
+    background-image: url("https://cornerhouseicecreams.com/wp-content/uploads/2024/04/ch-logo.png");
+    height : 100px;
+    width : 100px;
+    background-size: cover;
+    margin-right : 550px;
+}

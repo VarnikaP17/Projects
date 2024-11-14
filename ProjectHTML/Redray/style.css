@@ -1,0 +1,580 @@
+*{
+    margin : 0;
+    font-family : Arial, Helvetica, sans-serif;
+    border : border-box;
+}
+
+.navbar{
+    
+    height : 100px;
+    display : flex;
+    align-items : center;
+}
+
+.nav-logo{
+    height : 54px;
+    width : 177px;
+    margin-right : 300px;
+    background-image : url("https://j89b91.a2cdn1.secureserver.net/wp-content/uploads/2019/10/logo.png");
+    background-size : cover;
+    margin-left : 50px;
+}
+
+.nav-content{
+    height : 100px;
+    width : 650px;
+    display : flex;
+    flex-direction: column;
+    justify-content : space-evenly;
+}
+
+.nav-info{
+    height : 47px;
+    width : 590px;
+    font-size : 15px;
+    display : flex;
+    align-items : center;
+    margin-left : 80px;
+}
+
+.nav-ops{
+    height : 30px;
+    width : 650px;
+}  
+
+.num1{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    height : 47px;
+    width : 216px;
+}
+
+.num2{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    border-right: 2px solid rgb(212, 206, 206); 
+    height : 47px;
+    width : 216px;
+    padding-left : 30px;
+    padding-right: 30px;
+}
+
+.num3{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    height : 47px;
+    width : 216px;
+    padding-right : 15px;
+}
+
+.nav-info i{
+    padding : 10px; 
+    border-radius : 50%; 
+    border-color : orange; 
+    border-style : solid;
+} 
+
+.nav-ops{
+    display : flex;
+    align-items : center;
+    justify-content : space-evenly;
+
+}
+
+.text{
+    color : #142166;
+    font-size : 13px;
+    font-weight : bold;
+    border-right : 2px solid rgb(212, 206, 206);
+    padding : 5px;
+}
+
+.text:hover{
+    color : rgb(236, 114, 15);
+}
+
+.main-area{
+    
+    height : 2820px;
+}
+
+.main-img{
+    background-image : url("https://j89b91.a2cdn1.secureserver.net/wp-content/uploads/2022/07/4915709-1920x824.jpg");
+    background-size : cover;
+    height : 435px;
+    display : flex;
+    align-items : center;
+}
+
+.main-img-content{
+    height : 65px;
+    width : 512px;
+    margin-left : 100px;
+}
+
+.main-img-content1{
+    height : 32px;
+    width : 512px;
+    color : white;
+    font-weight : bolder;
+    font-size : 35px;
+}
+
+.main-img-content2{
+    height : 32px;
+    width : 512px;
+    font-size : 24px;
+    color : rgb(251, 250, 249);
+}
+
+.main1-img{
+    background-image : url("https://j89b91.a2cdn1.secureserver.net/wp-content/uploads/2020/06/service-image.jpg?time=1695844474");
+    background-size : cover;
+    height : 850px;
+    display : flex;
+    justify-content : flex-end;
+}
+
+.main1-img-content{
+    height : 843px;
+    width : 530px;
+}
+
+.main1-img-content1{
+    height : 44px;
+    width : 520px;
+    font-size : 37px;
+    margin-top : 60px;
+    padding-left : 10px;
+}
+
+.main1-img-content2{
+    height : 45px;
+    width : 510px;
+    font-size : 15px;
+    padding: 10px;
+}
+
+.main1-img-content3{
+    border-left : 2px solid #FB4633;
+    height : 20px;
+    width : 510px;
+    color : #FB4633;
+    padding : 10px;
+    display : inline;
+}
+
+.main1-img-content3:hover{
+    color : black;
+    border-left : 2px solid black;
+}
+
+.main1-img-content4{
+    height : 600px;
+    width : 530px;
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : space-evenly;
+    padding-top : 20px;
+}
+
+.box{
+    height : 280px;
+    width : 240px;
+    display : flex;
+
+}
+
+.box-image{
+    height : 65px;
+    width : 65px;
+    border-radius : 50px;
+    background-color : #F15929;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    margin : 10px;
+}
+
+.box1-content{
+    height : 200px;
+    width : 170px;
+    display : flex;
+    justify-content : center;
+    flex-wrap : wrap;
+    padding-left : 15px;
+}
+
+.box1-content p{
+    color : #171717;
+    font-size : 15px;
+}
+
+.box1-content h1{
+    color : #283891;
+    font-size : 22px;
+}
+
+.box2-content{
+    height : 200px;
+    width : 170px;
+    display : flex;
+    justify-content : center;
+    flex-wrap : wrap;
+    padding-left : 15px;
+}
+
+.box2-content p{
+    color : #171717;
+    font-size : 15px;
+}
+
+.box2-content h1{
+    padding-right : 100px;
+    padding-top : 13px;
+    color : #283891;
+    font-size : 22px;
+}
+
+.box3-content{
+    height : 200px;
+    width : 170px;
+    display : flex;
+    justify-content : center;
+    flex-wrap : wrap;
+    padding-left : 15px;
+}
+
+.box3-content p{
+    color : #171717;
+    font-size : 15px;
+}
+
+.box3-content h1{
+    color : #283891;
+    font-size : 22px;
+}
+
+.box4-content{
+    height : 150px;
+    width : 170px;
+    display : flex;
+    justify-content : center;
+    flex-wrap : wrap;
+    padding-left : 15px;
+}
+
+.box4-content p{
+    color : #171717;
+    font-size : 15px;
+}
+
+.box4-content h1{
+    color : #283891;
+    font-size : 22px;
+}
+
+
+.main2-img{
+    background-image : url("https://j89b91.a2cdn1.secureserver.net/wp-content/themes/rise-edge/images/solution_bg.jpg");
+    background-size : cover;
+    height : 497px;
+}
+
+.main2-img-content{
+    height : 450px;
+    width : 530px;
+    margin-left : 40px;
+}
+
+.main2-img-content1{
+    height : 44px;
+    width : 530px;
+    font-size : 37px;
+    color : white;
+    padding-top : 45px;
+}
+
+.main2-img-content2{
+    height : 44px;
+    width : 530px;
+    color : white;
+    padding-top : 15px;
+}
+
+.main2-img-content3{
+    height : 198px;
+    width : 530px;
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : space-evenly;
+    align-items : center;
+    padding-top : 15px;
+}
+
+.main2-box{
+    height : 40px;
+    width : 260px;
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : space-evenly;
+    align-items : center;
+}
+
+.main2-box-img{
+    height : 30px;
+    width : 30px;
+    background-image : url("https://j89b91.a2cdn1.secureserver.net/wp-content/themes/rise-edge/images/storage_bullet.png");
+    background-size : cover;
+}
+
+.main2-box-content{
+    height : 25px;
+    width : 210px;
+    color : white;
+    font-size : 17px;
+}
+
+.main2-img-content4{
+    border-left : 2px solid #FB4633;
+    height : 20px;
+    width : 530px;
+    margin-top : 50px;
+    padding-left : 7px;
+    display : inline;
+    display : flex;
+}
+
+.view-solutions{
+    color : #FB4633;
+}
+
+.view-solutions:hover{
+    color : white;
+}
+
+.main3{
+    height : 480px;
+    padding-top : 60px;
+}
+
+.main3-box1{
+    height : 44px;
+    font-size : 37px;
+    display : flex;
+    justify-content: center;
+}
+
+.main3-box1 b{
+    padding-left : 10px;
+}
+
+.main3-box2{ 
+    height : 58px;
+    padding-top : 50px;
+}
+
+.main3-box2-img{
+    background-image: url("https://learnphotographycanada.com/wp-content/uploads/2018/02/quotation-marks-left-grey.png");
+    background-size : cover;
+    height : 60px;
+    width : 78px;
+    margin-left : 200px;
+}
+
+.main3-box3{
+    height : 135px;
+    padding-top : 20px;
+    padding-left : 140px;
+    padding-right : 100px;
+    display : flex;
+    justify-content : center;
+}
+
+.main3-box3 p{
+    height : 135px;
+    width : 670px;
+}
+
+
+.main3-box4{
+    height : 44px;
+    padding-left : 285px;
+    margin-top : 30px;
+}
+
+.main3-box4 p{
+    color : #142166;
+}
+
+.main3-box4 h3{
+    color : #F15929;
+}
+
+.main4-img{
+    background-image : url("https://j89b91.a2cdn1.secureserver.net/wp-content/uploads/2020/06/about-image.jpg?time=1695844474");
+    background-size : cover;
+    height : 500px;
+    display : flex;
+    justify-content : flex-end;
+    align-items : center;
+}
+
+.main4-img-content{
+    height : 300px;
+    width : 550px;
+    margin-top : 100px;
+    margin-right : 70px;
+}
+
+.main4-img-content1{
+    height : 44px;
+    font-size : 37px;
+}
+
+.main4-img-content2{
+    height : 90px;
+    padding-top : 20px;
+}
+
+.main4-img-content3{
+    height : 20px;
+    margin-top : 30px;
+    color : #FB4633;
+    border-left : 2px solid #FB4633;
+    padding-left : 7px;
+}
+
+.main4-img-content3:hover{
+    color : black;
+    border-left : 2px solid black;
+    padding-left : 7px;
+}
+
+.foot{
+    height : 600px;
+    display : flex;
+    justify-content : space-evenly;
+}
+
+.foot-img{
+    height : 688px;
+    border : 2px solid black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrFfWyIhNy5A5cnuAY0kkWplB2cHJn9czR_8g1eG8Ud5e-uos0");
+    background-size : cover;
+}
+
+.foot-content1{
+    height : 217px;
+    width : 287px;
+    margin-top : 40px;
+}
+
+.foot-content1-box1{
+    background-image : url("https://j89b91.a2cdn1.secureserver.net/wp-content/uploads/2019/10/foot_logo.png?time=1695844474");
+    background-size : cover;
+    height : 74px;
+    width : 241px;
+}
+
+.foot-content1-box2{
+    height : 103px;
+    width : 287px;
+    display : flex;
+    flex-wrap : wrap;
+    margin-top : 40px;
+}
+
+.foot-box{
+    height : 22px;
+    width : 138px;
+    color : white;
+}
+
+.foot-box:hover{
+    color : #F15929;
+}
+
+.foot-box i{
+   margin-right : 5px;
+}
+
+.foot-content2{
+    height : 562px;
+    width : 277px;
+    margin-top : 70px;
+}
+
+.foot-box1{
+    height : 160px; 
+}
+
+.contact{
+    font-size : 18px;
+    color : white;
+}
+
+.foot-box1-value{
+    height : 23px;
+    width : 160px;
+    color : white;
+    margin-top : 20px;
+    margin-bottom : 20px;
+}
+
+.hov:hover{
+    color : #F15929;
+}
+
+.foot-box1-value i{
+    margin-right : 5px;
+}
+
+.foot-box2{
+    border-top : 1px solid white;
+    border-bottom : 1px solid white;
+    height : 120px;
+    color : white;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    margin-left : 15px;
+}
+
+.foot-content3{
+    height : 107px;
+    width : 277px;
+    margin-top : 69px;
+}
+
+.follow{
+    height : 21px;
+    font-size : 18px;
+    color : white;
+    margin-bottom : 21px;
+}
+
+.follow-in{
+    height : 35px;
+}
+
+.follow-in-img{
+    background-image : url("https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_linkedin-512.png");
+    background-size : cover;
+    height : 35px;
+    width : 35px;
+}
+
+.copyright{
+    height : 20px;
+    margin-top : 50px;
+    color : white;
+    padding-left : 100px;
+}
+
+.copyright b{
+    color : #F15929;
+}

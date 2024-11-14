@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Currency Converter</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+              integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" 
+              referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+
+        <!-- <div class = "image_container">
+            <img src = "https://img.freepik.com/premium-vector/money-transfer-global-currency-stock-exchange-background_115579-579.jpg" class = "slide">
+            <img src = "https://as2.ftcdn.net/v2/jpg/04/75/13/73/1000_F_475137379_AIbovHu2q42AbsScDQGYR62AP1pmSvVo.jpg" class = "slide">
+            <img src = "https://img.freepik.com/premium-vector/money-transfer-background_115579-657.jpg" class = "slide">
+            <img src = "https://media.istockphoto.com/id/1329626273/photo/global-communication-network-concept-digital-transformation-dx.webp?b=1&s=612x612&w=0&k=20&c=i9KGSv1YR6VKX_C-wBTecVM3790Fw2_S0oa9AMziPT0=" class = "slide">
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUFF08XZoBy5SSNrJojVQZPlQKexCCOYIw0c0VxlNbUt3ce1ZleGl5rQLAnW4CBDdiaPY&usqp=CAU" class = "slide">
+        </div> -->
+
+        <div class = "container">
+            <h2>Currency Converter</h2>
+            <center><h4>Made with &#128151 by Varnika</h4></center>
+            <form>
+                <div class = "amount">
+                    <p>Enter Amount</p>
+                    <input value = "1" type = "text">
+                </div>
+                <div class = "dropdown">
+                    <div class="from">
+                        <p>From</p>
+                        <div class="select-container">
+                            <img src = "https://flagsapi.com/IN/shiny/64.png">
+                            <select name = "from"></select>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    <div class="to">
+                        <p>To</p>
+                        <div class="select-container">
+                            <img src = "https://flagsapi.com/US/shiny/64.png">
+                            <select name = "to"></select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "msg">1 INR = 0.012USD</div>
+                <button>Get Exchange Rate</button>
+            </form>
+        </div>
+        <script src = "country_list.js"></script>
+        <script src = "app.js"></script>
+    </body>
+</html>
