@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Menu</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="/css/in.css" />
+
+</head>
+<body>
+
+<header class="head">
+        <div>
+          <ul class="nav1">
+            <!-- <li>LOGO</li>
+              -->
+              <li><a href="/home">home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/menu">Menu</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <%if(u){%>
+            <li><a href="/cart">cart</a></li>
+            <li><a href="/reserve">reserve</a></li>
+            <%}%>
+            <%if(!u){%>
+            <li><a href="/login">login</a></li>
+            <%}else{%>
+            <li><a href="/logout">logout</a></li>
+            <%}%>
+          </ul>
+        </div>
+        <% if (!u) { %>
+            <div class="login-prompt">Please log in to order items from the menu.</div>
+        <% } %>
+    </header>
+
+    
+    
+    <section id="menu" class="menu-section">
+        <% Object.keys(items).forEach(itemtype => { %>
+            <h2><%= itemtype %></h2>
+            <div class="menu-items">
+            <% items[itemtype].forEach(item => { %>
+                <div class="menu-item">
+                    <a href="/item?id=<%= item.itemid %>&type=<%= itemtype %>"><img src="images/menu/<%= item.imgname %>" alt="<%= item.itemname %>"></a>
+                    <div class="menu-details">
+                        <h3><%= item.itemname %></h3>
+                        <div class="price">
+                            <h3 style="color:black">Price: <%= item.price %></h3>
+                            <%if(u){%>
+                            <a href="/menu?id=<%= item.itemid %>&i:menu">
+                                <button class="order-btn" data-item="<%= item.itemname %>">Order</button>
+                            </a>
+                            <%}%>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+            </div>
+        <% }); %>
+    </section>
+
+</body>
+<script>
+document.querySelectorAll('.order-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        localStorage.setItem('scrollPosition', window.scrollY);
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollPosition = localStorage.getItem('scrollPosition');
+    if (scrollPosition) {
+        setTimeout(() => {
+            window.scrollTo(0, scrollPosition);
+            localStorage.removeItem('scrollPosition');
+        }, 0);
+    }
+});
+</script>
+</html>

@@ -1,0 +1,114 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff0f6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #F20C90;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+.products {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; 
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.product {
+    flex: 0 0 auto;
+    background-color: #f5e4e8;
+    border-radius: 12px;
+    padding: 20px;
+    width: 95%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+    
+}
+
+.product h2, .product p {
+    margin: 5px 0;
+}
+
+button.b {
+    background-color: #F20C90;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.b:hover {
+    background-color: #402022;
+    transform: translateY(-3px);
+}
+
+#cart {
+    background-color: #ffe6e6;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cart p {
+    color: #b30000;
+    font-weight: bold;
+}
+
+#btn {
+    background-color: #F20C90;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#btn:hover {
+    background-color: #402022;
+    transform: translateY(-3px);
+}
+
