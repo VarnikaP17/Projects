@@ -21,7 +21,7 @@
                 <div class = "content">
                 <div>
                     <label for = "date" class = "cred">Date</label><br/>
-                    <input name = "date" type = "date" class = "date"  min = "2024-10-20" max = "2024-10-25">
+                    <input name = "date" type = "date" class = "date" min = <?php echo date('Y-m-d')?> max = <?php echo date('Y-m-d', strtotime('+4 days'))?>>
                 </div>
                 <div>
                     <label for = "guests" class = "cred">Guests</label><br/>
